@@ -1,0 +1,8 @@
+# MOT settings
+pretrained: 'data/models/motrv2_base_r18_v2.pth'
+
+##--Backbone--
+# Name of the convolutional backbone to use. ('circular_resnet18', 'resnet18', 'resnet50', 'resnet101')
+backbone: 'resnet18'
+# Resnet weights to use ('ResNet18_Weights.DEFAULT' == IMAGENET1K_V1). null if resnet should be trained.
+backbone_weights: 'ResNet18_Weights.DEFAULT'

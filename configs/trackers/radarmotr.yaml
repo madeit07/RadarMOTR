@@ -1,0 +1,22 @@
+#---Model---
+# Tracker model to evaluate (Options: 'RadarMOTR', 'SORT', 'KF'. Default is 'RadarMOTR')
+tracker: 'RadarMOTR'
+# Path to the model weights to load
+model_path: 'data/models/radarmotr_r18.pth'
+# Name of the directory where the track files are stored
+tracker_dirname: 'radarmotr'
+
+#---Tracker config---
+# Keep all tracks with a track score higher than this value. (Default: 0.5)
+score_threshold: 0.5
+
+# Tracks with scores lower than this value are marked as disappeared. (Default: 0.5)
+filter_score_threshold: 0.5
+
+# Number of frames after the object disappeared
+# (meaning track score is less than filter_score_threshold)
+# before the track is completely removed. (Default: 20)
+miss_tolerance: 5
+
+# Keep all tracks with a bounding box area larger than this value.
+area_threshold: 0           # Min area in train and val datasets is 8

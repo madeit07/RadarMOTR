@@ -1,0 +1,6 @@
+epochs: 5
+output_dir: 'data/debug'
+workers: 0
+
+# Decays the learn rate every x epochs.
+lr_drop: 4

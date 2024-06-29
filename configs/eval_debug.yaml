@@ -1,0 +1,3 @@
+#---Output---
+# Path to the directory where all trackers are stored grouped by the dataset split
+output_dir: 'data/debug/trackers'

@@ -1,0 +1,16 @@
+#---Output---
+# Name of the directory where the track files are stored
+tracker_dirname: 'default'
+# Path to the directory where all trackers are stored grouped by the dataset split
+output_dir: 'data/trackers'
+
+#---Dataset---
+split: 'val'
+
+#---Eval Config---
+eval: true
+
+#---Model---
+# Tracker model to evaluate (Options: 'RadarMOTR', 'SORT'. Default is 'RadarMOTR')
+tracker: null
+

@@ -1,0 +1,27 @@
+#---Model---
+# Tracker model to evaluate (Options: 'RadarMOTR', 'SORT'. Default is 'RadarMOTR')
+tracker: 'SORT'
+
+# Name of the directory where the track files are stored
+tracker_dirname: 'sort'
+
+#---Tracker config---
+# Maximum number of frames to keep alive a track without associated detections.
+max_age: 5
+
+# Minimum number of associated detections before track is initialized.
+min_hits: 1
+
+# Minimum IoU for match.
+iou_threshold: 0.3
+
+# Resolution to convert from image y coordinate to range (the range interval is inverted => 256 -> 0m, 0 -> 50m)
+range_resolution: 0.1953125
+
+# Resolution to convert from image x coordinate to velocity (the max velocity / 2 is subtracted to center the value)
+velocity_resolution: 0.41968030701528203
+
+# Time delta between frames
+fps: 10
+
+augment_data: false

@@ -1,0 +1,25 @@
+# Input dataset
+dataset: 'rdtrack'
+data_path: 'data/dataset/RDTrack'
+split: 'train'
+val_split: 'val'
+classes: ['track']
+
+## Dataloader
+workers: 2
+batch_size: 1
+
+sample_mode: 'random_interval'
+# Number of frames per batch
+sample_size: 5
+# Number of frames to skip, will be randomly picked between 1 and this value (inclusive)
+sample_stride: 10
+
+
+augment_data: true
+## Augmentations (only training split)
+# Probability that the sample sequence is reversed and image/boxes are flipped horizontally. 0 to deactivate.
+aug_random_reverse_and_hflip_prob: 0.5
+# Probability that a random gaussian noise is added to the range doppler images. 0 to deactivate.
+aug_random_noise_prob: 0.5
+

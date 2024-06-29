@@ -1,0 +1,27 @@
+{
+    "files.eol": "\n",
+    "python.analysis.exclude": [
+        "**/data",
+        "**/TrackEval",
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": true,
+    },
+    "search.exclude": {
+        "**/__pycache__": true,
+    },
+    "files.associations": {
+        "**/rdtrack*.txt": "CSV",
+        "**/ratrack*.txt": "CSV",
+        "**/det.txt": "CSV",
+        "**/gt.txt": "CSV",
+        "*.out": "log",
+        "**/runs/**/cout.txt": "log",
+    },
+}

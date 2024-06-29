@@ -1,0 +1,2 @@
+# Trade GPU compute for memory using gradient-checkpointing method
+use_grad_checkpointing: true

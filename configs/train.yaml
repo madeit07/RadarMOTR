@@ -1,0 +1,9 @@
+start_epoch: 0
+epochs: 80
+
+# Decays the learn rate every x epochs.
+lr_drop: 40
+
+# Miscellaneous
+# path where to save, empty for no saving
+output_dir: 'data/RadarMOTR'

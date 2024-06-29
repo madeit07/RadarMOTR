@@ -1,0 +1,70 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Train RadarMOTR",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "main.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "with",
+        "debug",
+        "pretrained"
+      ],
+      "env": {
+        "CUDA_LAUNCH_BLOCKING": "1"
+      }
+    },
+    {
+      "name": "Eval RadarMOTR",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "eval.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "with",
+        "debug",
+        "radarmotr",
+        "resnet18"
+      ],
+      "env": {
+        "CUDA_LAUNCH_BLOCKING": "1"
+      }
+    },
+    {
+        "name": "Eval SORT",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "eval.py",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "args": [
+          "with",
+          "debug",
+          "sort"
+        ],
+        "env": {
+          "CUDA_LAUNCH_BLOCKING": "1"
+        }
+    },
+    {
+        "name": "Eval KF",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "eval.py",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "args": [
+          "with",
+          "debug",
+          "kf"
+        ],
+        "env": {
+          "CUDA_LAUNCH_BLOCKING": "1"
+        }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+#---Learn rates---
+lr: 0.0002
+lr_backbone_names: ['backbone.0']
+lr_backbone: 0.00002
+lr_linear_proj_names: ['reference_points', 'sampling_offsets']
+lr_linear_proj_mult: 0.1
+# Decays the learn rate every x epochs.
+lr_drop: 40
+
+weight_decay: 0.0001
+
+# gradient clipping max norm
+clip_max_norm: 0.1
+
+#---Deformable DETR---
+with_box_refine: true
+two_stage: false
+
+#Model parameters
+frozen_weights: null
+
+##--Backbone--
+# Name of the convolutional backbone to use. ('resnet18', 'resnet50', 'resnet101')
+backbone: 'resnet50'
+# Resnet weights to use ('ResNet50_Weights.IMAGENET1K_V1', 'ResNet50_Weights.DEFAULT'). null if resnet should be trained from ground up.
+backbone_weights: 'ResNet50_Weights.IMAGENET1K_V1'
+# If true, we replace stride with dilation in the last convolutional block (DC5)
+dilation: false
+# Type of positional embedding to use on top of the image features. ('sine', 'learned')
+position_embedding: sine
+# Number of feature levels the encoder processes from the backbone
+num_feature_levels: 4
+
+use_circular_padding: false
+
+##--Transformer--
+# Number of encoding layers in the transformer
+enc_layers: 6
+# Number of decoding layers in the transformer
+dec_layers: 6
+# Intermediate size of the feedforward layers in the transformer blocks
+dim_feedforward: 1024
+# Size of the embeddings (dimension of the transformer)
+hidden_dim: 256
+# Dropout applied in the transformer
+dropout: 0.1
+# Number of attention heads inside the transformer's attentions
+nheads: 8
+
+# Number of additional detect queries which can be used by the transformer
+# to detect missed objects by the external detector
+num_queries: 10
+
+dec_n_points: 4
+enc_n_points: 4
+
+decoder_cross_self: false
+sigmoid_attn: False
+
+extra_track_attn: false
+
+##--Segmentation---
+# Train segmentation head if the flag is provided
+masks: false
+
+#---Loss---
+##--Matcher--
+# Class coefficient in the matching cost
+set_cost_class: 1.0
+# L1 box coefficient in the matching cost
+set_cost_bbox: 5.0
+# giou box coefficient in the matching cost
+set_cost_giou: 2.0
+
+##--Loss coefficients--
+# Calculate auxiliary decoding losses (loss at each layer)
+aux_loss: true
+
+cls_loss_coef: 1.0
+bbox_loss_coef: 5.0
+giou_loss_coef: 2.0
+
+# Relative classification weight of the no-object class
+# Focal classification loss parameters
+focal_alpha: 0.25
+focal_gamma: 2
+
+#---MOT settings---
+##--Query Interaction Module settings--
+query_interaction_layer: 'QIMv2'
+qim_score_threshold: 0.5
+qim_dropout: 0
+qim_update_query_pos: false
+qim_iou_threshold: 0.5
+
+##--Tracker Parameters while training--
+# Keep all tracks with a track score higher than this value (Default 0.6).
+score_threshold: 0.6
+
+# Tracks with scores lower than this value are marked as disappeared. (Default: 0.5)
+filter_score_threshold: 0.5
+
+# Number of frames after the object disappeared
+# (meaning track score is less than filter_score_threshold)
+# before the track is completely removed. (Default: 10)
+miss_tolerance: 10
+
+memory_bank_type: null
+
+# Query Denoising
+query_denoise: 0.05
+
+# Trade GPU compute for memory using gradient-checkpointing method
+# MOTRv2 has this enabled
+use_grad_checkpointing: false
