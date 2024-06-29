@@ -55,7 +55,7 @@ The codebase is built on top of
 
 ### Prepare dataset
 
-Download the **RDTrack** dataset from [Google Drive](https://drive.google.com/drive/folders/1h0Tv5X86o7G_yNxn9_nTYm_3EKvdRcIO), unzip it and save it into `data/dataset/RDTrack`.
+Download the **RDTrack** dataset from [Google Drive](https://drive.google.com/drive/folders/1h0Tv5X86o7G_yNxn9_nTYm_3EKvdRcIO), unzip it and save it into `data/dataset/RDTrack`. RDTrack is a preprocessed version of [RADTrack](https://github.com/madeit07/RADTrack) that only includes Range-Doppler data and is formatted in MOT20 format. 
 
 All paths are only recommendations. If you choose a custom path, make sure to update the dataset config (`configs/base/dataset.yaml`)
 
