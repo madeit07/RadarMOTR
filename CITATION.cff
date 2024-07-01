@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this model, please cite it as below."
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Dell"
+    given-names: "Martin"
+  - family-names: "Bradfisch"
+    given-names: "Wolfgang"
+  - family-names: "Schober"
+    given-names: "Steffen"
+  - family-names: "Klöck"
+    given-names: "Clemens"
+  title: "RadarMOTR: Multi-Object Tracking with Transformers on Range-Doppler Maps"
+  year: 2024
+  conference:
+    name: "International Conference Radar 2024 (RADAR2024)"
