@@ -12,5 +12,7 @@ preferred-citation:
   - family-names: "Klöck"
     given-names: "Clemens"
   title: "RadarMOTR: Multi-Object Tracking with Transformers on Range-Doppler Maps"
-  journal: "International Conference Radar 2024 (RADAR2024)"
   year: 2024
+  conference:
+    name: "International Conference Radar 2024 (RADAR2024)"
+  collection-title: "International Conference Radar 2024 (RADAR2024)"
