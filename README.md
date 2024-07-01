@@ -117,3 +117,16 @@ Evaluate with KF tracker:
 ```sh
 python eval.py with kf split=val tracker_dirname=kf
 ```
+
+## Citation
+
+Please use the following citation:
+
+```bib
+@inproceedings{RadarMOTR2024,
+    author = {Dell, Martin and Bradfisch, Wolfgang and Schober, Steffen and Klöck, Clemens},
+    title = {{RadarMOTR: Multi-Object Tracking with Transformers on Range-Doppler Maps}},
+    booktitle = {International Conference Radar 2024 (RADAR2024)},
+    year = {2024}
+}
+```
