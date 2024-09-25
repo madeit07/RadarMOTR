@@ -12,6 +12,11 @@
 > [!NOTE]
 > If you're looking for the RADTrack dataset, you can find it in this repository: https://github.com/madeit07/RADTrack.
 
+## Paper
+
+- Our paper is accepted at International Conference Radar 2024 (RADAR2024). 
+- [Accepted Preprint](https://bwsyncandshare.kit.edu/s/zCgc5o89L44oN5a)
+
 ## Installation
 
 The codebase is built on top of 
