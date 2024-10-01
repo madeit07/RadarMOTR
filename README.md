@@ -1,7 +1,7 @@
-# RadarMOTR: Multi-Object-Tracking with Transformer Neuronal Networks in Range-Doppler Maps
+# RadarMOTR: Multi-Object Tracking with Transformers on Range-Doppler Maps
 
 
-**RadarMOTR** is a transformer neuronal network based on [MOTRv2](https://github.com/megvii-research/MOTRv2) able to track multiple objects in Range-Doppler maps. Objects are first detected by an external detector based on CFAR & DBSCAN clustering. Detected objects are then passed to RadarMOTR for association, i.e. tracking. Todays Radar trackers are built with handcrafted methods like Kalman Filter to perform association across frames. The parameters of such methods are difficult to configure and optimize. RadarMOTR solves this problems by associating objects using an neuronal network instead of a Kalman Filter.
+**RadarMOTR** is a transformer neural network based on [MOTRv2](https://github.com/megvii-research/MOTRv2) able to track multiple objects in Range-Doppler maps. Objects are first detected by an external detector based on CFAR & DBSCAN clustering. Detected objects are then passed to RadarMOTR for association, i.e. tracking. Todays Radar trackers are built with handcrafted methods like Kalman Filter to perform association across frames. The parameters of such methods are difficult to configure and optimize. RadarMOTR solves this problems by associating objects using an neural network instead of a Kalman Filter.
 
 <div align="center">
 
